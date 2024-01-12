@@ -1,15 +1,15 @@
 {
   "expo": {
-    "name": "CountdownApp",
+    "name": "Release Countdown",
     "slug": "CountdownApp",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "orientation": "portrait",
-    "icon": "./assets/splashScreenIconFinal.png",
+    "icon": "./assets/iconAndroid.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splashScreenIconFinal.png",
-      "resizeMode": "contain",
+      "image": "./assets/splash.png",
       "backgroundColor": "#1b1b1b"
+
     },
     "assetBundlePatterns": [
       "**/*"
@@ -19,12 +19,22 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/splashScreenIconFinal.png",
+        "foregroundImage": "./assets/iconAndroid.png",
         "backgroundColor": "#1b1b1b"
-      }
+      },
+      "package": "com.wired87.CountdownApp",
+      "versionCode": 7
     },
     "web": {
-      "favicon": "./assets/splashScreenIconFinal.png"
+      "favicon": "./assets/iconAndroid.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "592179a5-ffd6-4cf6-be00-ba1b2ee8958c"
+      }
     }
+  },
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-2225753085204049~7858506814"
   }
 }

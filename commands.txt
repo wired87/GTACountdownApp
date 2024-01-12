@@ -1,0 +1,11 @@
+# fix deps
+npx expo install --fix
+
+# check deps
+npx expo install --check
+
+# dev build
+npx eas-cli build --profile development
+
+# production build
+npx eas-cli build -p android
