@@ -83,7 +83,12 @@ const App : React.FC = () => {
   const timer = useCallback(() => {
     if (appLoaded && timeRemaining) {
       return(
-        <CustomCountdown timeRemaining={timeRemaining} />
+        <>
+          <View style={styles.titleContainer}>
+            <Text style={styles.title}>Release Countdown</Text>
+          </View>
+          <CustomCountdown timeRemaining={timeRemaining} />
+        </>
       )
     }else {
       return(
@@ -151,10 +156,6 @@ const App : React.FC = () => {
             requestNonPersonalizedAdsOnly: false,
           }}
         />
-      </View>
-
-      <View style={styles.titleContainer}>
-        <Text style={styles.title}>Release Countdown</Text>
       </View>
 
       {timer()}
